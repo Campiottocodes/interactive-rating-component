@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(214, 14%, 23%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--very-dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-content {
+  background-color: var(--dark-blue);
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4%;
+}
+.fc {
+  height: 350px;
+  width: 350px;
+}
+.star-icon {
+  width: 13%;
+  height: 13%;
+  margin: 0% 3% 3% 0;
+  background-color: var(--medium-grey);
+  border-radius: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8%;
+}
+
+.star-icon img {
+  max-width: 100%;
+}
+.tittle {
+  font-size: 190%;
+  color: var(--white);
+  margin-bottom: 4%;
+}
+.star-icon {
+  margin-bottom: 30px;
+}
+.description {
+  color: var(--light-grey);
+  margin-bottom: 7%;
+  line-height: 150%;
+}
+.rating {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5em;
+}
+
+.rating span {
+  width: 55px;
+  height: 55px;
+  background-color: var(--medium-grey);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8%;
+}
+.rating span.selected {
+  background-color: var(--orange);
+}
+.rating span:hover {
+  background-color: var(--light-grey);
+}
+.but-fc {
+  width: 100%;
+}
+button {
+  width: 100%;
+  height: 45px;
+  align-items: center;
+  font-size: 17px;
+  text-transform: uppercase;
+  border-radius: 3rem;
+  color: var(--orange);
+  cursor: pointer;
+  border: none;
+}
+button:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+.bc {
+  height: 350px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+.machine-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8%;
+}
+h3 {
+  height: 40px;
+  width: 65%;
+  background-color: var(--medium-grey);
+  color: var(--orange);
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  border-radius: 3rem;
+}
+.bc h2 {
+  text-align: center;
+  margin-top: 5%;
+}
+.bc p {
+  margin: 0;
+  text-align: center;
+  letter-spacing: 0.1px;
+}
